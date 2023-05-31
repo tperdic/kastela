@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+.accessibility {background-color: #ddd; border: 1px solid var(--grey1); }
+
+a:focus,
+.menu li a:focus,
+.top_right li a:focus {outline: 1px solid #000; }
+
+.scroll-down .menu_holder {top: -190px;}
+
+
+.menu li:focus-within .submenu {
+	display: block;
+	overflow: visible;
+    visibility: visible;
+    opacity: 1;
+	position:absolute; z-index:1001; left:50%; top:80px; width:245px; transform: translateX(-50%);
+}
+
+.top_right li.langs:focus-within .submenu {
+	display: block;
+	overflow: visible;
+    visibility: visible;
+    opacity: 1;
+	position:absolute; z-index:1001; right: 0; top:80px; padding: 25px 0 0 0;
+}
+
+.home .menu_holder,
+.home .menu {padding-top:0;}
+
+.menu_holder,
+.page .menu_holder,
+.home .menu_holder,
+.home.scroll-up .menu_holder {background: white; }
+
+.covid + .accessibility + .menu_holder {top: 44px; position: absolute; }
+.scroll-up .covid + .accessibility + .menu_holder {top: 0; position: fixed; }
+
+.home .menu > ul > li:after {display:none; }
+.home .logo_holder .logo_normal {display: none;}
+.home .logo_holder .logo_small {display: block;}
+
+
+.home .menu > ul > li.active a,
+.home .menu > ul > li:hover a,
+.menu li.hasSub:hover > a,
+.menu li.active > a {color: white;}
+
+.home .menu > ul > li a,
+.menu li.hasSub:hover > a,
+.menu li.active:hover > a {color: var(--grey1);}
+
+.home .menu > ul > li.active.menu_blue,
+.scroll-up .menu > ul > li.active.menu_blue,
+.scroll-up .menu > ul > li.menu_blue:hover,
+.home .menu > ul > li.menu_blue:hover,
+.home .menu > ul > li.active.menu_lightgreen,
+.scroll-up .menu > ul > li.active.menu_lightgreen,
+.scroll-up .menu > ul > li.menu_lightgreen:hover,
+.home .menu > ul > li.menu_lightgreen:hover,
+.home .menu > ul > li.active.menu_green,
+.scroll-up .menu > ul > li.active.menu_green,
+.scroll-up .menu > ul > li.menu_green:hover,
+.home .menu > ul > li.menu_green:hover,
+.home .menu > ul > li.active.menu_darkgreen,
+.scroll-up .menu > ul > li.active.menu_darkgreen,
+.scroll-up .menu > ul > li.menu_darkgreen:hover,
+.home .menu > ul > li.menu_darkgreen:hover,
+.home .menu > ul > li.active.menu_brown,
+.scroll-up .menu > ul > li.active.menu_brown,
+.scroll-up .menu > ul > li.menu_brown:hover,
+.home .menu > ul > li.menu_brown:hover,
+.home .menu > ul > li.active.menu_yellow,
+.scroll-up .menu > ul > li.active.menu_yellow,
+.scroll-up .menu > ul > li.menu_yellow:hover,
+.home .menu > ul > li.menu_yellow:hover,
+.home .menu > ul > li.active.menu_darkblue,
+.scroll-up .menu > ul > li.active.menu_darkblue,
+.scroll-up .menu > ul > li.menu_darkblue:hover,
+.home .menu > ul > li.menu_darkblue:hover {background: var(--darkblue); }
+
+.home .menu li.hasSub > a:after {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(0%) saturate(1%) hue-rotate(149deg) brightness(91%) contrast(104%);
+}
+
+.home .menu li.hasSub.active > a:after,
+.home .menu li.hasSub:hover > a:after {
+    filter: none;
+}
+
+.home .menu li.hasSub.langs > a,
+.home .menu li.hasSub.langs:hover > a {
+    color: #3f3f3f !important;
+}
+
+.home .menu li.hasSub.langs > a img,
+.home .menu li.hasSub.langs:hover > a img,
+.home .menu li.hasSub.langs:hover > a:after {
+    filter: brightness(0) saturate(100%) invert(28%) sepia(0%) saturate(1%) hue-rotate(149deg) brightness(91%) contrast(104%);
+}
+
+.darkblue,
+.blue,
+.lightgreen,
+.brown,
+.yellow,
+.green,
+.darkgreen {background-color: var(--darkblue);}
+
+.hero_desc .lightgreen {background-color: var(--darkblue);}
+
+p,
+.banner_txt p,
+.slider4 .facts_txt p,
+.novost_datum,
+.downloads a span,
+.data,
+.data a,
+.menu .top_right li ul li a {color: #222 !important; }
+
+.slider4 .facts_txt p {font-size: 18px;}
+
+.slider4 .owl-nav .owl-prev, .slider4 .owl-nav .owl-next {border: 1px solid #222;}
+
+.slider4 .owl-nav .owl-prev:after, 
+.slider4 .owl-nav .owl-next:after,
+.slider .owl-prev:after, 
+.slider .owl-next:after {
+    filter: brightness(0) saturate(100%);
+}
+
+.back2top img {
+    filter: brightness(100) saturate(100%);
+}
+
+.slider4 .facts_txt .date {background-color: var(--darkblue) !important;}
+
+.slider4 .facts_txt .date:after {
+    border: 14px solid var(--darkblue) !important;
+    border-right: 6px solid transparent !important;
+}
+
+.buttlike {background-color: var(--darkblue) !important; color: #fff !important; }
+
+.smjestaj_box .smjestaj_box_overlay.bg_darkblue,
+.smjestaj_box .smjestaj_box_overlay.bg_blue,
+.smjestaj_box .smjestaj_box_overlay.bg_yellow,
+.smjestaj_box .smjestaj_box_overlay.bg_lightgreen {background: rgba(0, 0, 0, 0.4); }
+
+.istrazi_butt.lightgreen:after,
+.istrazi_butt.brown:after {border-color: var(--darkblue);}
+
+img.savjet_bann_bg {filter: brightness(0) saturate(100%) invert(16%) sepia(38%) saturate(7025%) hue-rotate(187deg) brightness(91%) contrast(102%);}
+
+.home .top_right li a.search {filter: brightness(0) saturate(100%) invert(28%) sepia(0%) saturate(1%) hue-rotate(149deg) brightness(91%) contrast(104%);}
+
+.acc_form_item input[type=submit], 
+.inp input[type=submit],
+.search_form input[type=submit],
+.page_search input[type=submit], 
+.page .menu > ul > li.active, 
+.scroll-up .menu > ul > li.active, 
+.scroll-up .menu > ul > li:hover, 
+.scroll-down .menu > ul > li.active, 
+.scroll-down .menu > ul > li:hover, 
+.page .menu > ul > li:hover {background-color: var(--darkblue) !important;}
+
+@media (max-width: 1100px) {
+	.home .menu > ul > li.active, 
+	.page .menu > ul > li.active, 
+	.scroll-up .menu > ul > li.active, 
+	.scroll-up .menu > ul > li:hover, 
+	.scroll-down .menu > ul > li.active, 
+	.scroll-down .menu > ul > li:hover, 
+	.page .menu > ul > li:hover, 
+	.home .menu > ul > li:hover {background-color: transparent !important;}
+	
+	.home .menu_trigger {margin-top: 0;	}
+	
+	.home .covid + .accessibility + .menu_holder.open,
+	.accessibility + .menu_holder.open {
+		padding-top: 0px !important;
+	}
+
+}
+
+
+
+
+
+
+
+/**/
